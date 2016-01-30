@@ -10,20 +10,20 @@
 	"description": "foo bar baz",
   "homepage_url": "foo.bar",
 	"permissions": ["tabs", "activeTab"],
-  "icons": {
-    "48": "icons/logo48.png"
-  },
   "browser_action": {
-    "default_icon": "icons/logo48.png",
-    "default_title": "youtubeStopper",
-    "default_popup": "popup/popup.html"
+    "default_icon": {
+      "19": "icons/logo19.png",
+      "38": "icons/logo38.png"
+    },
+    "default_title": "youtubeStopper"
   },
   "content_scripts": [
     {
       "matches": "*://*.youtube.com/",
       "js": ["content_scripts/stop.js"]
-    }
-  
-  
-  ]
+    }  
+  ],
+  "background": {
+    "scripts": ["content_scripts/listener.js"]
+  }
 }
