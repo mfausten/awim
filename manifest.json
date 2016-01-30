@@ -1,0 +1,29 @@
+{
+	"applications": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  },
+	"manifest_version": 2,
+	"name": "youtubeStopper",
+	"version": "0.0.1",
+	"description": "foo bar baz",
+  "homepage_url": "foo.bar",
+	"permissions": ["tabs", "activeTab"],
+  "icons": {
+    "48": "icons/logo48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/logo48.png",
+    "default_title": "youtubeStopper",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": "*://*.youtube.com/",
+      "js": ["content_scripts/stop.js"]
+    }
+  
+  
+  ]
+}
