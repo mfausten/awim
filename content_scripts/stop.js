@@ -5,8 +5,10 @@
   *
   **/
 function stop(request, sender, sendResponse) {
+    console.log('executing clock on pause/resume button');
     document.querySelector('.ytp-play-button.ytp-button').click();
-    browser.runtime.onMessage.removeListener(stop);
 }
 
-browser.runtime.onMessage.addListener(stop);
+if(false === browser.runtime.onMessage.hasListener(stop)){
+  browser.runtime.onMessage.addListener(stop);
+}

@@ -8,12 +8,10 @@
   *
   **/
 browser.browserAction.onClicked.addListener(function(tab) {
-  browser.tabs.query({}, function(result){
+  browser.tabs.query({}, function(result){console.log(result);
     result.forEach(function(value, index){
-      if(value.url.startsWith('https://www.youtube.com')){
-        browser.tabs.executeScript(value.id, { file: "/content_scripts/stop.js" })
+      if(value.url.startsWith('https://www.youtube.com'))
         browser.tabs.sendMessage(value.id, {});
-      }
     });
   });
 });
