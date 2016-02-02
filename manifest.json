@@ -9,7 +9,7 @@
 	"version": "0.0.1",
 	"description": "foo bar baz",
   "homepage_url": "foo.bar",
-	"permissions": ["tabs", "activeTab"],
+	"permissions": ["tabs"],
   "browser_action": {
     "default_icon": {
       "19": "icons/logo19.png",
