@@ -9,7 +9,7 @@
 	"name": "A Work Interruption Manager",
 	"version": "0.1",
 	"description": "Stop your current YoutTube stream from any firefox instance in any tab",
-  "homepage_url": "",
+  "homepage_url": "https://github.com/mfausten/awim",
 	"permissions": ["tabs"],
   "browser_action": {
     "default_icon": {
