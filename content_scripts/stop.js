@@ -1,11 +1,10 @@
 /**
   *
-  *
-  *
+  * this function is executed when the button in the firefox toolbar is clicked.
+  * it will execute the the code in a specific tab and stop/resume the video
   *
   **/
-function stop(request, sender, sendResponse) {
-    console.log('executing clock on pause/resume button');
+function stop() {
     document.querySelector('.ytp-play-button.ytp-button').click();
 }
 
