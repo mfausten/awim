@@ -1,21 +1,21 @@
 {
 	"applications": {
     "gecko": {
-      "id": "addon@example.com"
+      "id": ""
     }
   },
 	"manifest_version": 2,
-	"name": "youtubeStopper",
-	"version": "0.0.1",
-	"description": "foo bar baz",
-  "homepage_url": "foo.bar",
+	"name": "A Work Interruption Manager",
+	"version": "0.1",
+	"description": "Stop your current YoutTube stream from any firefox instance in any tab",
+  "homepage_url": "",
 	"permissions": ["tabs"],
   "browser_action": {
     "default_icon": {
       "19": "icons/logo19.png",
       "38": "icons/logo38.png"
     },
-    "default_title": "youtubeStopper"
+    "default_title": "AWIM - A Work Interruption Manager"
   },
   "content_scripts": [
     {
