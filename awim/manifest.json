@@ -1,7 +1,7 @@
 {
 	"applications": {
     "gecko": {
-      "id": "",
+      "id": "foo@awim.tld",
       "strict_min_version": "17.0"
     }
   },
