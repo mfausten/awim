@@ -1,7 +1,8 @@
 {
 	"applications": {
     "gecko": {
-      "id": ""
+      "id": "",
+      "strict_min_version": "17.0"
     }
   },
 	"manifest_version": 2,
