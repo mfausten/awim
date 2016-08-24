@@ -31,7 +31,8 @@
   });
 });*/
 
-document.addEventListener("click", function(e) {
+
+function handleClick() {
 	
 	console.log('inside event listener');
 	
@@ -71,4 +72,7 @@ document.addEventListener("click", function(e) {
 		  
         });
       });
-});
+	
+}
+
+chrome.browserAction.onClicked.addListener(handleClick);

@@ -16,7 +16,9 @@
 		"19": "icons/logo19.png",
 		"38": "icons/logo38.png"
 		},
-		"default_popup": "popup/popup.html",
 		"default_title": "AWIM - A Work Interruption Manager"
+	},
+	"background": {
+		"scripts": ["./content_scripts/listener.js"]
 	}
 }
