@@ -31,7 +31,6 @@
   });
 });*/
 
-
 function handleClick() {
 	
 	console.log('inside event listener');
@@ -74,5 +73,10 @@ function handleClick() {
       });
 	
 }
+
+chrome.commands.onCommand.addListener(function(command) {
+  console.log("onCommand event received for message: ", command);
+  handleClick();
+});
 
 chrome.browserAction.onClicked.addListener(handleClick);

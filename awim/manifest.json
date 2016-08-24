@@ -1,10 +1,10 @@
 {
 	"applications": {
-    "gecko": {
-      "id": "foo@awim.tld",
-      "strict_min_version": "17.0"
-    }
-  },
+		"gecko": {
+			"id": "foo@awim.tld",
+			"strict_min_version": "17.0"
+		}
+	},
 	"manifest_version": 2,
 	"name": "A Work Interruption Manager",
 	"version": "1.1",
@@ -20,5 +20,13 @@
 	},
 	"background": {
 		"scripts": ["./content_scripts/listener.js"]
+	},
+	"commands": {
+		"toggle-feature": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+E"
+			},
+			"description": "start/pause spotify"
+		}
 	}
 }
