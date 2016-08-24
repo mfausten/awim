@@ -1,30 +1,32 @@
 {
 	"applications": {
-    "gecko": {
-      "id": "foo@awim.tld",
-      "strict_min_version": "17.0"
-    }
-  },
+		"gecko": {
+			"id": "foo@awim.tld",
+			"strict_min_version": "17.0"
+		}
+	},
 	"manifest_version": 2,
 	"name": "A Work Interruption Manager",
-	"version": "0.1",
-	"description": "Stop your current YoutTube stream from any firefox instance in any tab",
+	"version": "0.2",
+	"description": "Stop your current Spotify stream from any firefox instance in any tab",
   "homepage_url": "https://github.com/mfausten/awim",
-	"permissions": ["tabs"],
-  "browser_action": {
-    "default_icon": {
-      "19": "icons/logo19.png",
-      "38": "icons/logo38.png"
-    },
-    "default_title": "AWIM - A Work Interruption Manager"
-  },
-  "content_scripts": [
-    {
-      "matches": "*://*.youtube.com/",
-      "js": ["content_scripts/stop.js"]
-    }  
-  ],
-  "background": {
-    "scripts": ["content_scripts/listener.js"]
-  }
+	"permissions": ["tabs", "*://play.spotify.com/*"],
+    "browser_action": {
+		"default_icon": {
+		"19": "icons/logo19.png",
+		"38": "icons/logo38.png"
+		},
+		"default_title": "AWIM - A Work Interruption Manager"
+	},
+	"background": {
+		"scripts": ["background_scripts/background.js"]
+	},
+	"commands": {
+		"toggle-feature": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+E"
+			},
+			"description": "start/pause spotify"
+		}
+	}
 }

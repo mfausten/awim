@@ -3,17 +3,17 @@
 Your favourite song is playing and like **always** the evil project manager comes in and wants to talk to you.
 Finally he is gone, but usually the next song has almost finished.
 
-With this simple Firefox AddOn, you can easily stop/resume your YouTube stream. No manually going back in the playlist - ever.
+With this simple Firefox AddOn, you can easily stop/resume your Spotify stream. No manually going back in the playlist - ever again.
 
 Requires only "tabs" [permission](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/permissions)
 
-## Known bugs
+## How to use
 
-* If you have different firefox installations and use them at the same time, the addon will stop working till only one version is running - doesn't matter how many instances
+Either click on the extension button in your browser toolbar or use the default shortcut `Strg+Shift+E` to start/stop yout stream
 
 ## TODO
 
-* Add keyboard short cut, so we don't need to click the button
 * Maybe add previous/next support
 * I don't like the logo
 * Would be cool if the logo would change on the state of the video paused/running, if possible
+* Before this addon could handle YouTube streams, maybe it is possible to add this again
