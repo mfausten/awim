@@ -7,24 +7,16 @@
   },
 	"manifest_version": 2,
 	"name": "A Work Interruption Manager",
-	"version": "0.1",
+	"version": "1.1",
 	"description": "Stop your current YoutTube stream from any firefox instance in any tab",
-  "homepage_url": "https://github.com/mfausten/awim",
-	"permissions": ["tabs"],
-  "browser_action": {
-    "default_icon": {
-      "19": "icons/logo19.png",
-      "38": "icons/logo38.png"
-    },
-    "default_title": "AWIM - A Work Interruption Manager"
-  },
-  "content_scripts": [
-    {
-      "matches": "*://*.youtube.com/",
-      "js": ["content_scripts/stop.js"]
-    }  
-  ],
-  "background": {
-    "scripts": ["content_scripts/listener.js"]
-  }
+    "homepage_url": "https://github.com/mfausten/awim",
+	"permissions": ["tabs", "*://play.spotify.com/*"],
+    "browser_action": {
+		"default_icon": {
+		"19": "icons/logo19.png",
+		"38": "icons/logo38.png"
+		},
+		"default_popup": "popup/popup.html",
+		"default_title": "AWIM - A Work Interruption Manager"
+	}
 }

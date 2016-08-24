@@ -15,10 +15,19 @@
 
     <p>foo bar baz</p>
     
-    <script type="text/javascript">
+	<script src="../content_scripts/listener.js"></script>
+	
+    <!--<script type="text/javascript">
+	
     document.addEventListener("click", function(e) {
+	
+		console.log('inside event listener');
+	
       browser.tabs.query({}, function(result){
+	  
         console.log(result);
+		console.log('iterating...');
+		
         result.forEach(function(value, index){
           if(value.url.startsWith('https://www.youtube.com')){
             console.log('found youtube tab');
@@ -29,6 +38,15 @@
             browser.tabs.sendMessage(value.id, {});
             console.log('done');
           }
+		  
+		  if(value.url.startsWith('https://play.spotify.com')) {
+			console.log('found spotify tab');
+			browser.tabs.executeScript(value.id, { file: "/content_scripts/stopSpotify.js" }, function(result) { console.log('result!'); console.table(result); });
+		  
+		  
+		  
+		  }
+		  
         });
       });
       /*console.log('click received');
@@ -46,7 +64,7 @@
 
     });
     
-    </script>
+    </script>-->
     
   </body>
 
