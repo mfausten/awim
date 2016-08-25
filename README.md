@@ -9,7 +9,7 @@ Requires only "tabs" [permission](https://developer.mozilla.org/en-US/Add-ons/We
 
 ## How to use
 
-Either click on the extension button in your browser toolbar or use the default shortcut `Strg+Shift+E` to start/stop yout stream
+Either click on the extension button in your browser toolbar or use the default shortcut `Strg+Shift+E` to start/stop your stream
 
 ## TODO
 
